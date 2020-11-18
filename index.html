@@ -1,51 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>f_Mamma Merry's - włoska pizza Poznań Grunwald</title>
+      <title>Mamma Merry's - włoska pizza Poznań Grunwald</title>
       <script src="jquery.js"></script> <script src="https://kit.fontawesome.com/7cde76e9ea.js" crossorigin="anonymous"></script> 
       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
       <button class="hamb-btn" aria-label="Menu"> <span class="hamb-btn-wrap"> <span class="hamb-btn-bars hamb-btn-bar-top"></span> <span class="hamb-btn-bars hamb-btn-bar-mid"></span> <span class="hamb-btn-bars hamb-btn-bar-bot"></span> </span> </button> 
-      <section class="nav">
-         <div class="nav-wrap"> 
-            <a href="#s2" class="nav-button nav-btn"> 
-               <img src="mamma.png" alt="" class="nav-btn-img"><span>o nas</span>
-            </a>
-            <a href="#s5" class="nav-button nav-btn">
-               <img src="reservation.png" alt="" class="nav-btn-img"><span>rezerwacje</span>
-            </a>
-            <a href="#s6" class="nav-button nav-btn">
-               <img src="some.png" alt="" class="nav-btn-img nav-btn-img-some"><span>social media</span>
-            </a>
-            <a href="#s7" class="nav-button nav-btn">
-               <img src="contact.png" alt="" class="nav-btn-img">
-               <span>kontakt</span>
-            </a>
-            <a href="#s3" class="nav-button nav-btn-wide">
-               poznaj naszą kartę <i class="fas fa-pizza-slice"></i>
-            </a>
-            <a href="#s4" class="nav-button nav-btn-wide">
-               zamów z dowozem <i class="fas fa-utensils"></i>
-            </a>
-         </div>
-         
-         <div class="nav-img">
-            <img src="mamma-img.png" alt="" class="nav-img-item">
-            <h4>mamma merry's</h4>
-         </div>
-      </section>
+
       <div class="wrapper">
+         <nav class="nav-desktop" id="navDesktop">
+            <ul>
+               <li class="nav-li"><a href="">Menu</a></li>
+               <li class="nav-li"><a href="">Zamówienia</a></li>
+               <li class="nav-li"><a href="">rezerwacje</a></li>
+<li class="nav-contact"><span class="nav-adress">Grunwaldzka 13</span><br>
+   <a href="#" class="nav-phone">888 777 666</a></li>
+            </ul>
+         </nav>
+
          <section class="s1" id="s1">
             <header>
                <img src="mamma-img.png" alt="" class="s1-img"> 
                <h4 class="s1-h4">Spotkajmy się w</h4>
                <h1 class="s1-h1">Mamma Merry's</h1>
             </header>
-            <div class="s1-btn-wrap"> <a href="#s3" class="btn s1-btn">poznaj nasze menu</a> <a href="#s4" class="btn s1-btn">złóż zamówienie</a> <a href="#s5" class="btn s1-btn">zarezerwuj stolik</a> </div>
+            <div class="s1-btn-wrap"> 
+               <a href="#s3" class="btn s1-btn">poznaj nasze menu</a> 
+               <a href="#s4" class="btn s1-btn">złóż zamówienie</a> 
+               <a href="#s5" class="btn s1-btn">zarezerwuj stolik</a> 
+            </div>
             <div class="s1-bot">
                <a href="#s2" class="s1-bot-a">
                   <div class="s1-bot-icon"></div>
@@ -53,75 +40,108 @@
                </a>
             </div>
          </section>
+
          <section class="s2" id="s2">
             <h2>Mamma Merry's</h2>
             <p>Znajdziesz u nas najlepszą obsługę, gotową zabrać Cię w <strong>podróż do Włoch</strong>. Podróż, w której odkryjesz tradycyjne smaki potraw starannie przygotowanych przez naszych kucharzy.</p>
-            <div class="bg-img-wrap">
-               <div class="bg-img s2-bg-img"></div>
-            </div>
+            <!-- <div class="bg-img-wrap"> -->
+               <!-- <div class="bg-img s2-bg-img"></div> -->
+            <!-- </div> -->
             <p>Intensywnie pomidorowy krem toskański? Aksamitne gnocchi w z cielęciną i świeżymi grzybami? A może <strong>prawdziwa włoska pizza</strong> z owocami morza i czosnkiem? Starannie skomponowane menu kryje <strong>najlepsze specjały Italii</strong>.</p>
             <p>Serwujemy potrawy bazujące na <strong>starannie wyselekcjonowanych i świeżych składnikach</strong>, których jakość docenią wszyscy miłośnicy śródziemnomorskiej kuchni. W czym tkwi sekret naszych dań? Przede wszystkim w miłości do gotowania.</p>
          </section>
+
+      </div>
+
+<div class="bg-img-wrap">
+   <div class="bg-img s2-bg-img"></div>
+</div>
+
+<div class="wrapper">
          <section class="s3" id="s3">
             <h2>Menu</h2>
-            <p>W naszej karcie znajdziesz <strong>dania kuchni włoskiej</strong>, przygotowane ze składników najlepszej jakości. Poniżej zebraliśmy nasze najpopularniejsze pozycje. Wybierz kategorię, by poznać pozostałe.</p>
-            <button class="btn menu-btn menu-click"> <span class="menu-default">wybierz kategorię</span> <i class="fas fa-chevron-down"></i> </button> 
-            <div class="menu-ul">
-               <li class="menu-click menu-ul-item przystawki">przystawki</li>
-               <li class="menu-click menu-ul-item pizza">pizza</li>
-               <li class="menu-click menu-ul-item makarony">makarony</li>
-               <li class="menu-click menu-ul-item dania-glowne">dania główne</li>
-               <li class="menu-click menu-ul-item napoje">napoje</li>
+            <p>W naszej karcie znajdziesz <strong>dania kuchni włoskiej</strong>,
+                przygotowane ze składników najlepszej jakości. Poniżej zebraliśmy nasze najpopularniejsze pozycje. 
+                Wybierz kategorię, by poznać pozostałe.
+            </p>
+
+             <!-- <select id="menu" class="menu-btn btn" onChange="myNewFunction(this);">
+               <option value="default">wybierz kategorię</option>
+               <option value="przystawki">przystawki</option>
+               <option value="pizza">pizza</option>
+               <option value="makarony">makarony</option>
+               <option value="przystawki">przystawki</option>
+               <option value="napoje">napoje</option>
+             </select> -->
+
+            <div class="menu-wrap">
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Margherita</h3>
+                  <span class="menu-item-cost">19 zł</span> 
+                  <p class="menu-item-content">pomidory pelati, mozzarella fior di latte DOP, świeża bazylia</p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Capricciosa</h3>
+                  <span class="menu-item-cost">25 zł</span> 
+                  <p class="menu-item-content">pomidory pelati, mozzarella fior di latte DOP, szynka gotowana Cotto,
+                     pieczarki brunatne, anchois</p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Jalapeño</h3>
+                  <span class="menu-item-cost">25 zł</span> 
+                  <p class="menu-item-content">pomidory pelati, mozzarella fior di latte DOP, pikantne salami, jalapeño, kremowe
+                     mascarpone</p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Formaggi</h3>
+                  <span class="menu-item-cost">25 zł</span> 
+                  <p class="menu-item-content">pomidory pelati, gorgonzola DOP, mascarpone, scamorza affumicata, parmezan,
+                     tymianek
+                     </p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Spinaci</h3>
+                  <span class="menu-item-cost">29 zł</span> 
+                  <p class="menu-item-content">pomidory pelati, mozzarella fior di latte DOP, szpinak na maśle z czosnkiem,
+                     gorgonzola DOP, marynowane grzyby leśne, parmezan
+                     </p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Verdura</h3>
+                  <span class="menu-item-cost">25 zł</span> 
+                  <p class="menu-item-content">oliwa czosnkowa, mozzarella fior di latte DOP, cebulki borettane,
+                     pieczona czerwona papryka, zielony pieprz, czarne oliwki, suszone pomidory
+                  </p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Bianca</h3>
+                  <span class="menu-item-cost">26 zł</span> 
+                  <p class="menu-item-content">biały sos autorski, mozzarella fior di latte DOP, kiełbasa Veneta, suszone pomidory,
+                     czerwona cebula
+                     </p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Pollo</h3>
+                  <span class="menu-item-cost">26 zł</span> 
+                  <p class="menu-item-content">pomidory pelati, mozzarella fior di latte DOP, grillowany kurczak,
+                     ostra papryka chili, czerwona cebula, kolendra
+                     </p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Burrata</h3>
+                  <span class="menu-item-cost">29 zł</span> 
+                  <p class="menu-item-content">pomidory pelati, czosnek, burrata, rukola</p>
+               </div>
+               <div class="menu-item">
+                  <h3 class="menu-item-head">Coppa</h3>
+                  <span class="menu-item-cost">27 zł</span> 
+                  <p class="menu-item-content">pomidory pelati, mozzarella fior di latte DOP, szynka coppa,
+                     pasta z mascarpone i suszonych pomidorów, rukola</p>
+               </div>
             </div>
-            <div class="menu-wrap menu-wrap-pizza">
-               <div class="menu-item">
-                  <h3 class="menu-item-head">1. Margheritta</h3>
-                  <span class="menu-item-cost">12,34 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry mozarelli, bazylia, oliwa</p>
-               </div>
-               <div class="menu-item">
-                  <h3 class="menu-item-head">2. Funghi</h3>
-                  <span class="menu-item-cost">14,28 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry mozarelli, pieczarki, oliwa</p>
-               </div>
-               <div class="menu-item">
-                  <h3 class="menu-item-head">3. Vegetariana</h3>
-                  <span class="menu-item-cost">16,34 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry bazylii, bazylia, oliwa</p>
-               </div>
-               <div class="menu-item">
-                  <h3 class="menu-item-head">4. Cardinale</h3>
-                  <span class="menu-item-cost">18,45 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry mozarelli, pieczarki, oliwa</p>
-               </div>
-               <div class="menu-item">
-                  <h3 class="menu-item-head">5. Margheritta</h3>
-                  <span class="menu-item-cost">19,23 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry bazylii, bazylia, oliwa</p>
-               </div>
-               <div class="menu-item">
-                  <h3 class="menu-item-head">6. Funghi</h3>
-                  <span class="menu-item-cost">21,33 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry mozarelli, pieczarki, oliwa</p>
-               </div>
-               <div class="menu-item">
-                  <h3 class="menu-item-head">7. Vegetariana</h3>
-                  <span class="menu-item-cost">23,53 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry bazylii, bazylia, oliwa</p>
-               </div>
-               <div class="menu-item">
-                  <h3 class="menu-item-head">8. Cardinale</h3>
-                  <span class="menu-item-cost">26,38 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry mozarelli, pieczarki, oliwa</p>
-               </div>
-               <div class="menu-item">
-                  <h3 class="menu-item-head">9. Margheritta</h3>
-                  <span class="menu-item-cost">26,98 zł</span> 
-                  <p class="menu-item-content">pomidory, plastry bazylii, bazylia, oliwa</p>
-               </div>
-            </div>
-            <!-- <div class="menu-wrap menu-wrap-makarony"> <div class="menu-item"> <h3 class="menu-item-head">1. Aglio y olio</h3> <span class="menu-item-cost">12,34 zł</span> <p class="menu-item-content">czosnek, papryczki chilli, oliwa, parmeza</p></div><div class="menu-item"> <h3 class="menu-item-head">2. Carbonara</h3> <span class="menu-item-cost">14,28 zł</span> <p class="menu-item-content">boczek, czosnek, cebula, jajko, parmezan</p></div><div class="menu-item"> <h3 class="menu-item-head">3. Vegetariana</h3> <span class="menu-item-cost">16,34 zł</span> <p class="menu-item-content">pomidory, plastry bazylii, bazylia, oliwa</p></div><div class="menu-item"> <h3 class="menu-item-head">4. Cardinale</h3> <span class="menu-item-cost">18,45 zł</span> <p class="menu-item-content">pomidory, plastry mozarelli, pieczarki, oliwa</p></div><div class="menu-item"> <h3 class="menu-item-head">5. Margheritta</h3> <span class="menu-item-cost">19,23 zł</span> <p class="menu-item-content">pomidory, plastry bazylii, bazylia, oliwa</p></div></div>--> 
+
          </section>
+
          <section class="s4" id="s4">
             <h2>zamów na wynos</h2>
             <p>Niezależnie od tego czy zabrakło Ci czasu na przygotowanie obiadu, czy też odwiedzają Cię niezapowiedziani goście - nasze dania zamówisz <strong>na wynos z dostawą</strong> lub odbiorem własnym.</p>
@@ -142,28 +162,39 @@
 
             <a href="#" class="btn">989 878 767 <i class="fas fa-phone"></i></a> 
          </section>
+
          <section class="s5" id="s5">
             <h2>zarezerwuj stolik</h2>
             <p>Jeśli planujesz u nas ważne spotkanie i chcesz mieć pewność, że dla wszystkich znajdzie się miejsce, możesz zarezerwować stolik.</p>
             <p><a href=""><strong>Zadzwoń</strong></a> lub <a href=""><strong>napisz do nas na Facebooku</strong></a> i daj znać w ile osób nas odwiedzicie oraz podaj imię, nazwisko i numer telefonu osoby kontaktowej.</p>
-            <div class="img-wrap">
-               <div class="bg-img s5-bg-img"></div>
-            </div>
          </section>
+</div>
+
+<div class="bg-img-wrap">
+   <div class="bg-img s5-bg-img"></div>
+</div>
+
+<div class="wrapper">
          <section class="s6" id="s6">
             <h2>social media</h2>
             <p>Ciekawi Cię jak wygląda nasza restauracja od frontu i od kuchni? Koniecznie zajrzyj na nasze profile w mediach społecznościowych!</p>
             <p>Poniżej znadziesz posty, na których oznaczyli nas nasi Goście oraz linki do naszych profili na Facebooku i Instagramie.</p>
-            <div class="img-wrap">
-               <div class="ig-wrap">
-                  <div class="ig-wrap-item"> <img src="1.png" alt="" class="ig-wrap-img"> </div>
-                  <div class="ig-wrap-item"> <img src="2.png" alt="" class="ig-wrap-img"> </div>
-                  <div class="ig-wrap-item"> <img src="3.png" alt="" class="ig-wrap-img"> </div>
-                  <div class="ig-wrap-item"> <img src="3.png" alt="" class="ig-wrap-img"> </div>
-                  <div class="ig-wrap-item"> <img src="1.png" alt="" class="ig-wrap-img"> </div>
-                  <div class="ig-wrap-item"> <img src="2.png" alt="" class="ig-wrap-img"> </div>
-               </div>
+         </section>
+         </div>
+
+         <div class="bg-img-wrap">
+            <div class="ig-wrap">
+               <div class="ig-wrap-item"> <img src="1.png" alt="" class="ig-wrap-img"> </div>
+               <div class="ig-wrap-item"> <img src="2.png" alt="" class="ig-wrap-img"> </div>
+               <div class="ig-wrap-item"> <img src="3.png" alt="" class="ig-wrap-img"> </div>
+               <div class="ig-wrap-item"> <img src="3.png" alt="" class="ig-wrap-img"> </div>
+               <div class="ig-wrap-item"> <img src="1.png" alt="" class="ig-wrap-img"> </div>
+               <div class="ig-wrap-item"> <img src="2.png" alt="" class="ig-wrap-img"> </div>
             </div>
+         </div>
+
+      <div class="wrapper">
+         <section class="s6" id="s6">
             <a href="" class="btn">
                mamma na instagramie<i class="fab fa-instagram"></i>
             </a>
@@ -171,6 +202,7 @@
                mamma na facebooku<i class="fab fa-facebook"></i>
             </a> 
          </section>
+
          <section class="s7" id="s7">
             <h2>kontakt</h2>
             <div class="contact-wrap">
@@ -203,6 +235,36 @@
             <li><a href=""></a></li>
          </div>
       </footer>
+
+      <section class="nav">
+         <div class="nav-wrap"> 
+            <a href="#s2" class="nav-button nav-btn"> 
+               <img src="mamma.png" alt="" class="nav-btn-img"><span>o nas</span>
+            </a>
+            <a href="#s5" class="nav-button nav-btn">
+               <img src="reservation.png" alt="" class="nav-btn-img"><span>rezerwacje</span>
+            </a>
+            <a href="#s6" class="nav-button nav-btn">
+               <img src="some.png" alt="" class="nav-btn-img nav-btn-img-some"><span>social media</span>
+            </a>
+            <a href="#s7" class="nav-button nav-btn">
+               <img src="contact.png" alt="" class="nav-btn-img">
+               <span>kontakt</span>
+            </a>
+            <a href="#s3" class="nav-button nav-btn-wide">
+               poznaj naszą kartę <i class="fas fa-pizza-slice"></i>
+            </a>
+            <a href="#s4" class="nav-button nav-btn-wide">
+               zamów z dowozem <i class="fas fa-utensils"></i>
+            </a>
+         </div>
+         
+         <div class="nav-img">
+            <img src="mamma-img.png" alt="" class="nav-img-item">
+            <h4>mamma merry's</h4>
+         </div>
+      </section>
+
       <script>
          $('.hamb-btn, .nav-button').click(function () {
              $('.nav').toggleClass("nav-open");
@@ -210,13 +272,40 @@
              $('.hamb-btn-bar-mid').toggleClass("hamb-btn-bar-mid-open");
              $('.hamb-btn-bar-bot').toggleClass("hamb-btn-bar-bot-open");
          })
-         
-         $('.menu-click').click(function () {
-         $('.menu-btn i').toggleClass("rotate");
-         $('.menu-btn').toggleClass("menu-btn-open");
-         $('.menu-default').toggleClass("white");
-         $('.menu-ul').toggleClass("menu-ul-open");
-         })
       </script>
+
+      <script>        
+      var prevScrollpos = window.pageYOffset;
+         window.onscroll = function () {
+             var currentScrollPos = window.pageYOffset;
+             if (prevScrollpos > currentScrollPos) {
+                 document.getElementById("navDesktop").style.top = "0px";
+             } else {
+                 document.getElementById("navDesktop").style.top = "-90px";
+             }
+             prevScrollpos = currentScrollPos;
+         }
+         </script>
+
+         <script>
+             const selectMenu = document.querySelector("#box1");
+      const menuItems = document.querySelectorAll(".menu-item");
+      // let value = 'dupa';
+
+      function myNewFunction(sel) {
+         value = sel.options[sel.selectedIndex].text;
+         menuItems.forEach( function (menuItem) {
+         // console.log(menuItem.classList.value);
+
+         if (menuItem.classList.contains(value)) {
+            console.log(menuItem)
+            menuItem.style.backgroundColor = "red";
+         }
+         else {menuItem.style.backgroundColod = "yellow"}
+
+
+      })
+      }
+         </script>
    </body>
 </html>
