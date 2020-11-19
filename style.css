@@ -320,7 +320,6 @@ li {
         width: 100%;
         height: auto;
         background-image: url("main-bg.png");
-        ;
     }
 
     section {
@@ -349,7 +348,9 @@ li {
 
     .s1-img {
         margin: 15px 0 15px 15%;
-        width: 80%
+        width: 80%;
+        max-width: 288px;
+        max-height: 300px;
     }
 
     .s1-h4::after {
@@ -557,7 +558,8 @@ li {
     }
 
     .menu-item-head {
-        font-size: 1.75rem
+        font-size: 1.75rem;
+        font-weight: 600;
     }
 
     .menu-item-cost {
@@ -700,7 +702,9 @@ li {
         bottom: -100px;
         z-index: -1;
         width: 50%;
+        max-width: 250px;
         opacity: .5;
+
     }
 
     footer {
@@ -1072,6 +1076,12 @@ li {
     }
 }
 
+@media (min-width:630px) {
+    .wrapper {
+        background-image: none;
+    }
+}
+
 @media (min-width:1200px) and (min-height:720px) {
 
     h2 {
@@ -1233,8 +1243,10 @@ li {
     }
 
     .s1-img {
-        width: 80%;
+        width: 90%;
         margin: 0 0 15px 12%;
+        max-width: none;
+        max-height: none;
     }
 
     .s2 {
@@ -1267,10 +1279,6 @@ li {
     .s4 a.btn {
         margin: 0;
         flex-basis: 30%;
-    }
-
-    h3.menu-item-head {
-        font-weight: 600;
     }
 
     .menu-item-content {
@@ -1331,6 +1339,7 @@ li {
     .s7-img {
         transform: rotate(90deg);
         width: 20%;
+        max-width: none;
         right: 200px;
         bottom: -100px;
         opacity: 1;
